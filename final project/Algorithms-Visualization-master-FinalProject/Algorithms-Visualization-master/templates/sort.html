@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sorting Algorithm Visualization</title>
+     <link rel="stylesheet" href="../css/sorting.css" />
+     <script src="https://kit.fontawesome.com/a658a7b479.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+     <nav>
+          <div class="mobile-logo">
+              <br />
+              <h1>
+                  <a href="../index.html">Algo<span>Visualization</span></a>
+                  <br>
+              </h1>
+          </div>
+          <div class="logo">
+              <a href="../index.html">Algo<span>Visualization</span></a>
+  
+          </div>
+          <ul>
+              <li><a href='../index.html'><label>HOME</label></a></li>
+  
+              <li>
+                  <a href="#">
+                      <select name="algo" id="algo" onchange="algoSelected()">
+                          <option value="" disabled selected>
+                              CHOOSE ALGORITHM
+                          </option>
+                          <option value="bubble">
+                              BUBBLE SORT
+                          </option>
+                          <option value="heap">
+                              HEAP SORT
+                          </option>
+  
+                          <option value="selection">
+                              SELECTION SORT
+                          </option>
+                          <option value="quick">
+                              QUICK SORT
+                          </option>
+                      </select>
+                  </a>
+              </li>
+  <!--
+              <li>
+                  <a>
+                      <label for="size">SIZE </label>
+                      <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                  </a>
+              </li>
+  
+              <li>
+                  <a>
+                      <label for="speed">SPEED </label>
+                      <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                  </a>
+              </li>
+  -->
+          </ul>
+     </nav>
+     <h1 class="container heading">Pick An Algorithm !</h1>
+
+     <div id="array"></div>
+     <div id="count"></div>
+     
+     <br>
+     <div class="container">
+          <button class="btn-success btn-lg btn-shadow btn-hover" id="sort">
+          Sort
+          </button>
+          &nbsp;&nbsp;
+          <button class="btn-danger btn-lg btn-shadow btn-hover" id="generate">
+          Generate New Array
+          </button>
+     </div>
+     <script src="../js/sorting/sorting.js"></script>
+</body>
+
+</html>
